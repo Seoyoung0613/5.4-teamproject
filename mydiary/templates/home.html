@@ -1,0 +1,11 @@
+<h1> Baby 사자 성장일기 </h1>
+
+<a href ="{% url 'new' %}">일과 작성</a><br><br>
+
+{% for post in posts_list %} 
+    <a href="{% url 'detail' index=post.pk %}">{{post.title}}</a><br>
+    <p>{{post.pub_date}}</p>
+    <p>{{post.body|linebreaks}}</p>
+    <h4>얼마나 성장했니? {{post.growth}}</h4>
+    <hr>
+{% endfor %}
