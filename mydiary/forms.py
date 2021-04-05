@@ -3,5 +3,5 @@ from .models import Content
 
 class ContentForm(forms.ModelForm):
     class Meta:
-        medel = Content
+        model = Content
         fields = ['title', 'body', 'growth',]
