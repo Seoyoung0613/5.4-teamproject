@@ -1,0 +1,61 @@
+@font-face {
+    font-family: 'SDSamliphopangche_Outline';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts-20-12@1.0/SDSamliphopangche_Outline.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'ImcreSoojin';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.3/ImcreSoojin.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{
+    box-sizing: border-box;
+    line-height: 10px;
+    background-color:#fff7ff;
+    background-size: 200px;
+}
+
+header{
+    height: 120px;
+    text-align:center;
+    line-height: 100px;
+    margin:0 auto;
+    font-family: 'ImcreSoojin';
+    font-size: 70px;
+    background-color:#d1c4e9;
+    background-image: unset;
+}
+
+#found{
+    height: 350px;
+    width: 350px;
+    margin:0 auto;
+    margin-top: 20px;
+    text-align:end;
+    line-height: 200px;
+    font-family: 'SDSamliphopangche_Outline';
+    font-size: 50px;
+    background-image: url("https://cdn.pixabay.com/photo/2016/03/31/15/14/magnifying-glass-1293096_960_720.png");
+    background-size: 350px;
+}
+.list1{
+    text-align: center;
+    line-height: 30px;
+    font-family: 'SDSamliphopangche_Outline';
+    font-size: x-large;
+}
+.list2{
+    display:list-item;
+    background:url("https://cdn.pixabay.com/photo/2020/01/26/11/58/hanging-cat-4794472_960_720.png")center 100% no-repeat;
+    background-size: 250px;
+    height: 500px;
+}
+.list3{
+    line-height: 30px;
+    text-align: center;
+    font-family: 'SDSamliphopangche_Outline';
+    font-size: x-large;
+}
