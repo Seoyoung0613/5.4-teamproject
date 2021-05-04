@@ -4,4 +4,4 @@ from .models import Content
 class ContentForm(forms.ModelForm):
     class Meta:
         model = Content
-        fields = ['title', 'body', 'growth',]
+        fields = ['title', 'body', 'cat','eating', 'how_much', 'state', 'place',]

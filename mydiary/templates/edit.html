@@ -5,10 +5,22 @@
 <head>
 	<meta charset="utf-8">
 	<link rel="stylesheet" href="{% static 'stylesheets/style.css' %}">
+	<style type="text/css">
+		.flex-container {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+	</style>
 </head>
-<h1>일기 수정하기</h1>
-	<form method="POST" class="post-form">
-        {% csrf_token %}
-		{{ form.as_p }}
-		<button type="submit" class="save btn btn-default">Save</button>
-	</form>
+<header>서강냥이 정보 수정하기</header>
+<div class="flex-container">
+	<div class="items2">
+		<form method="POST" class="post-form">
+
+			{% csrf_token %}
+			{{ form.as_p }}
+			<button type="submit" class="save btn btn-default">저장꾹꾹🐾</button>
+		</form>
+	</div>
+</div>

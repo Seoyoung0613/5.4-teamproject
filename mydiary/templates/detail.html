@@ -5,18 +5,38 @@
 <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="{% static 'stylesheets/style.css' %}">
+    <style type = "text/css">
+        .flex-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+        </style>
 </head>
-<h1> 내용 자세히 보기 </h1>
+<header> 서강냥이 자세히 보기 </header><br><br>
 
+<div class = "items2">
 <div class="posts">
     {% if post.pub_date %}
     <div class="date">
-        {{ post.pub_date }}
-    </div>
+    {{ post.pub_date }}
+    </div><br><br>
     {% endif %}
-    <h1>{{post.title}}</h1>
-    <p> {{post.body|linebreaks}}</p>
+    <h1>{{post.title}}<br><br></h1>
+    <p> {{post.body}}<br><br></p>
+    <p> {{post.cat}}<br><br></p>
+    <p> {{post.eating}}<br><br></p>
+    <p> {{post.how_much}}<br><br></p>
+    <p> {{post.state|linebreaks}}<br><br></p>
 </div>
 
-<a href="{% url 'edit' index=post.pk %}">수정하기</a><br>
-<a href="{% url 'delete' pk=post.pk %}">삭제하기</a><br>
+<div class = "items3"><br>
+<button type="submit"><a href="{% url 'edit' index=post.pk %}"> 수정꾹꾹🐾 </a></button> 
+</div>
+<div class = "items3">
+    <button type="submit"><a href="{% url 'delete' pk=post.pk %}"> 삭제꾹꾹🐾 </a></button> 
+</div>
+
+</div>
+
+

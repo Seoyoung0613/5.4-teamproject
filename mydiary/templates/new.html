@@ -5,11 +5,26 @@
 <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="{% static 'stylesheets/style.css' %}">
-</head>
-<h1> 아기 사자의 하루 일과 </h1>
+    <style type = "text/css">
+    .flex-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+    </style>
 
-<form method="POST" class="post-form">
-    {% csrf_token %} 
-    {{ form.as_p }}
-    <button type="submit">저장하기</button>
-</form>
+</head>
+
+<header>서강냥이야 뭐하니? </header> 
+
+<body>
+    <div class = "flex-container">
+    <div class = "items2">
+
+    <form method="POST" class="post-form">
+        {% csrf_token %} 
+        {{ form.as_p }}
+        <button type="submit">저장꾹꾹🐾</button>
+    </form>
+</div>
+</body>

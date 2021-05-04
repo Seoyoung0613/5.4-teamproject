@@ -5,26 +5,73 @@
 <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="{% static 'stylesheets/style.css' %}">
+
+
 </head>
 
 <body>
     <header> 서강 냥이 일상도감 </header>
     <div id="found">
-        <a href ="{% url 'new' %}">냥이 발견</a>
-    </div><br><br>
-    <div class="list1">
-        {% for post in posts_list %} 
-        <a href="{% url 'detail' index=post.pk %}">{{post.title}}</a><br>
-        <div>{{post.pub_date}}</div>
-        <div class="list2">
-            <br><br><br><br><br><br><br>
-            <div>{{post.body}}</div>
+        <div class="catimg">
+            <a href ="{% url 'new' %}" style="color: #8b6b61;" >
+                <img src = "https://i.pinimg.com/736x/90/0b/b7/900bb788316bc693a7d8dc9dc2613506.jpg"/></a>
         </div>
-            <div class = "list3"> 
-                <div>얼마나 성장했니? {{post.growth}}</div>
-                <hr>
+        
+
+    </div><br><br>
+    <div class = "flex-container">
+        
+        {% for post in posts_list %} 
+        <div class = "items">
+            <div class = "title">
+                <a href="{% url 'detail' index=post.pk %}">{{post.title}}</a><br>
             </div>
+            <div class = "date">
+                <div>{{post.pub_date}}</div>
+            </div>
+            <div class = "bd">
+
+
+                <div class = "menu">
+                    <div style="font-weight: bold;">✔ 귀여웠나요?<br><br></div>
+                    <div>{{post.body}}</div>    
+                </div>
+
+
+                <div class = "cattype">
+                    <div style="font-weight: bold;">✔ 고양이 종류<br><br></div>
+                    <div>{{post.cat}}</div>
+                </div>        
+
+
+                <div class="snack">
+                    <div style="font-weight: bold;">✔ 간식을 줬나요?<br><br></div>
+                    <div>{{post.eating}}</div>
+                </div>
+
+
+                <div class="amount">
+                    <div style="font-weight: bold;">✔ 얼마나 줬나요?<br><br></div>
+                    <div>{{post.how_much}}</div>
+                </div>
+
+
+                <div class="con">
+                    <div style="font-weight: bold;">✔ 고양이 상태<br><br></div>
+                    <div>{{post.state}}</div>
+                </div>
+
+
+                <div class="catplace">
+                    <div style="font-weight: bold;">✔ 고양이 발견장소<br><br></div>
+                    <div>{{post.place}}</div>
+                </div>
+                
+                
+            </div>
+        </div>
         {% endfor %}
+
     </div>
 </body>  
 

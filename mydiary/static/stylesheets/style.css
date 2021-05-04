@@ -11,10 +11,23 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'TmonMonsori';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/TmonMonsori.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Bazzi';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/Bazzi.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 body{
     box-sizing: border-box;
     line-height: 10px;
-    background-color:#fff7ff;
+    background-color:#fffffb;
     background-size: 200px;
 }
 
@@ -23,39 +36,94 @@ header{
     text-align:center;
     line-height: 100px;
     margin:0 auto;
-    font-family: 'SDSamliphopangche_Outline';
-    font-size: 70px;
-    background-color:#d1c4e9;
+    font-family: 'TmonMonsori';
+    font-size: 60px;
+    background-color:#a59a96;
     background-image: unset;
+    border-radius: 20px;
 }
 
 #found{
-    height: 350px;
-    width: 350px;
+    height: 500px;
     margin:0 auto;
     margin-top: 20px;
-    text-align:end;
+    text-align:center;
     line-height: 200px;
-    font-family: 'SDSamliphopangche_Outline';
-    font-size: 50px;
-    background-image: url("https://cdn.pixabay.com/photo/2016/03/31/15/14/magnifying-glass-1293096_960_720.png");
-    background-size: 350px;
+    font-family: 'TmonMonsori';
+    font-size: 40px;
+
 }
-.list1{
-    text-align: center;
-    line-height: 30px;
-    font-family: 'SDSamliphopangche_Outline';
-    font-size: x-large;
+
+.flex-container{
+    flex-wrap:wrap;
+    align-content: space-around;
+    display: flex;
+    justify-content: space-around;
+    
 }
-.list2{
-    display:list-item;
-    background:url("https://cdn.pixabay.com/photo/2020/01/26/11/58/hanging-cat-4794472_960_720.png")center 100% no-repeat;
-    background-size: 250px;
+
+.items{
+    height: 400px;
+    width: 30%;
+    background-color:#d6cbc7;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    font-family: 'Bazzi';
+    font-size: 20px;
+    
+
+}
+
+
+.items2{
     height: 500px;
+    width: 30%;
+    background-color:#d6cbc7;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    margin-top: 10px;
+    margin-left: 500px;
+
 }
-.list3{
-    line-height: 30px;
+
+
+
+.title{
+    height:50px;
+    vertical-align: middle;
     text-align: center;
-    font-family: 'SDSamliphopangche_Outline';
-    font-size: x-large;
+    line-height: 30px;
+    background-color: #a59a96;
+    width: 100%;
+    border-radius: 20px;
+    font-size: 28px;
+    
+    
+
+    
+}
+
+.bd{
+    height:70%;
+    margin-top: 10px;
+    margin-left: 15px;
+}
+
+.date{
+    height: 10%;
+    margin-top: 10px;
+    margin-left: 15px;
+
+}
+
+.menu, .cattype, .snack, .amount, .con, .catplace{
+    margin-top: 15px;
+    margin-left: 15px;
+
+}
+
+.catimg{
+    height: 100px;
+    width: 100px;
+    margin-left: 450px;
 }
